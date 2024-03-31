@@ -7,25 +7,25 @@
         //    {
         //     only memory allocation of all vairiable phase is used.
         //    }
-        Val1: undifine
-        Val2: undifine
-        addtwoNum: definition
-        result1: undefined 
+        // Val1: undifine
+        // Val2: undifine
+        // addtwoNum: definition
+        // result1: undefined 
  // 3 step: then go to execution phase
-        val1=10
-        Val2=5
-        addtwo=  there is two step 
-        1. new variable environment
-        2. execution thread.     
- // 4 step: all the result will go to the global execution.        
+//         val1=10
+//         Val2=5
+//         addtwo=  there is two step 
+//         1. new variable environment
+//         2. execution thread.     
+//  // 4 step: all the result will go to the global execution.        
  // 5 step: then the global execution contest is deleted autometecaly after compliting their work.
 
-     finaly all this procces will be repeted again and again
+     //finaly all this procces will be repeted again and again
 
      //++++++++++ Call Stack +++++++++++
-     it work based in LIFO(Last In First Out) concept.
+    // it work based in LIFO(Last In First Out) concept.
 
-     example: 
+    // example: 
       function one(){
         console.log("one")
       }
@@ -36,7 +36,7 @@
         console.log("three")
       }
 
-      LIFO example:
+     // LIFO example:
 
       function one(){
         console.log("one")
@@ -53,5 +53,5 @@
       two()
       three()
 
-      in second ex one go to  exicute First
-      then two is call in one function then two is exicute then three is call inside two then three go to exicute and after execution three is go out first then two and last one is go out.
+    //   in second ex one go to  exicute First
+    //   then two is call in one function then two is exicute then three is call inside two then three go to exicute and after execution three is go out first then two and last one is go out.
