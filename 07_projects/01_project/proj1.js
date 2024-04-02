@@ -1,5 +1,5 @@
 console.log("harsh");
-const buttons = document.querySelectorAll('.botton');
+const buttons = document.querySelectorAll('.button');
 const body = document.querySelector("body")
 
 buttons.forEach(function (button) {
