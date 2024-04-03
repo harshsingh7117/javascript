@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body style="background-color: #414141; color: aliceblue">
+    <h2>Amazing Images</h2>
+    <div>
+      <ul id="images">
+        <li>
+          <img
+            width="150px"
+            height="100px"
+            id="flower"
+            src="https://images.pexels.com/photos/20646979/pexels-photo-20646979/free-photo-of-small-world.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt=""
+          />
+      </li>
+
+        <li>
+          <img
+            width="150px"
+            height="100px"
+            id="lighthouse"
+            src="https://images.pexels.com/photos/20750259/pexels-photo-20750259/free-photo-of-pigeon-point-lighthouse.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt=""
+          />
+        </li>
+
+        <li>
+          <img
+            width="150px"
+            height="100px"
+            id="chair"
+            src="https://images.pexels.com/photos/20548700/pexels-photo-20548700/free-photo-of-two-chairs-on-a-dock-under-the-stars.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt=""
+          />
+        </li>
+
+        <li>
+          <img
+            width="150px"
+            height="100px"
+            id="apple"
+            src="https://images.pexels.com/photos/13686779/pexels-photo-13686779.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+            alt=""
+          />
+        </li>
+
+        <li>
+          <img
+            width="200px"
+            id="mountain"
+            src="https://images.pexels.com/photos/20723862/pexels-photo-20723862/free-photo-of-a-man-on-a-motorcycle-rides-down-a-road-in-the-fog.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <a style="color: aliceblue" href="https://www.google.com/" id="google"
+            >Google</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // document.getElementById('apple').onclick = function(){
+    // alert("apple clicked");
+    // }
+
+    //    attchEvent()
+    // jQuery-on
+
+    // type,timestamp,defaultprevented
+    // target,toelement,srcelement,currenttarget
+    // clientx,clienty,screeny,screenx
+    // altkey,ctrlkey,shiftkey,keycode
+
+    // document.getElementById('Images').addEventListener('click', function(e){
+    //     console.log("click inside the ul");
+    // }, false);
+
+    // document.getElementById('apple').addEventListener('click', function(e){
+    //     console.log("click inside the apple");
+    //     e.stopPropagation()
+    // }, false);
+
+    // document.getElementById('google').addEventListener('click', function (e){
+    //     console.log("google clicked");
+    //     e.preventDefault()
+    //     e.stopPropagation()
+
+    // }, false)
+
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e.target);
+
+    // },false)
+    document.querySelector("#images").addEventListener(
+      "click",
+      function (e) {
+        console.log(e.target.tagName);
+        if (e.target.tagName === "IMG") {
+          console.log(e.target.id);
+          let removeIt = e.target.parentNode;
+          removeIt.remove();
+        }
+        // removeIt.parentNode.removeChild(removeIt)
+      },
+      false
+    );
+  </script>
 </html>
