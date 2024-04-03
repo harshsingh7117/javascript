@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 25px;
+}
+h1{
+    background-color: black;
+}
+
+button{
+    border-radius: 7px;
+    display: inline;
+}
