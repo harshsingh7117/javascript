@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clouser</title>
+</head>
+<body>
+    <button id="red">red</button>
+    <button id="green">green</button>
+</body>
+<script>
+    // function init(){
+    //     let name = "harsh";
+    //     function displayName(){
+    //         console.log();
+    //     }
+    // }
+
+    // lekcikal
+
+    // function outer(){
+    //     let username = "raj"
+    //     function inner(){
+    //         console.log(username);
+    //     }
+    //     inner()
+    // }
+
+    // outer()
+    // console.log("too outer", username);
+
+    // closure
+
+    // function makeFunc(){
+    //     const name = "harsh";
+    //     function dispalyName(){
+    //         console.log(name);
+    //     }
+    //     return dispalyName;
+    // }
+
+    // const myFunc = makeFunc()
+    // myFunc();
+
+
+
+   
+</script>
+
+<script>
+    // document.getElementById('red').onclick= function(){
+    //     document.body.style.backgroundColor = `red`
+    // }
+
+    // document.getElementById('green').onclick = function(){
+    //     document.body.style.backgroundColor = `green`
+    // }
+
+
+
+    function clickHandeler(color){
+        // document.body.style.backgroundColor = `${color}`
+
+        return function(){
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+
+    document.getElementById('red').onclick = clickHandeler("red")
+    document.getElementById('green').onclick = clickHandeler("green")
+    
+</script>
+</html>
